@@ -27,8 +27,7 @@ function copyPassword() {
 	 
 	 /* Copy the text inside the text field */
 	 document.execCommand("copy");
-		 
-	 /* Use below command to access the 
-		value of copied text */
-	 console.log(copyText.value);
 }
+
+
+/** Clipboard tooltip */

@@ -13,6 +13,13 @@ body {
     font-family: "Karla", sans-serif;
     height: 100%;
     width: 100%;
+    color: #D5D4D8;
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #55F991;
 }
 
 img {
@@ -27,22 +34,11 @@ img {
     margin: 0 auto;
 }
 
-p {
-    color: #D5D4D8;
-}
-
 button {
     background-color: #10B981;
     border-radius: 6px;
     padding: 9px 17px;
     color: #FFFFFF;
-}
-
-hr {
-    background-color: #2F3E53;
-    height: 1px;
-    border: none;
-    margin: 2rem 0;
 }
 
 /** new password box **/
@@ -89,6 +85,27 @@ hr {
 }
 #password-box-refresh {
     background-image: url('./icons8-refresh-48.png');
+}
+
+.copy-tooltip {
+    text-align: right;
+    font-size: 10px;
+    font-style: italic;
+    width: 250px;
+    margin: 5px auto;
+}
+
+.parameters {
+    max-width: 300px;
+    line-height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+#pass-length {
+    width: 50px;
+    text-align: center;
 }
 
 @media only screen and (max-width: 481px) {
