@@ -30,4 +30,13 @@ function copyPassword() {
 }
 
 
-/** Clipboard tooltip */
+/** Slider */
+
+var slider = document.getElementById("length-range");
+var output = document.getElementById("output-range");
+output.innerHTML = slider.value; // Display the default slider value
+
+// Update the current slider value (each time you drag the slider handle)
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}

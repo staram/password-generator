@@ -38,7 +38,7 @@ button {
     background-color: #10B981;
     border-radius: 6px;
     padding: 9px 17px;
-    color: #FFFFFF;
+    color: #D5D4D8;
 }
 
 /** new password box **/
@@ -103,10 +103,38 @@ button {
     margin: 0 auto;
 }
 
-#pass-length {
-    width: 50px;
-    text-align: center;
+/** Slider **/
+.slider {
+    padding: 20px;
+    padding-left: 20px;
+    background: #D5D4D8;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
 }
+.slider input[type="range"] {
+  	-webkit-appearance: none !important;
+ 	width: 100%;
+    height: 2px;
+  	background: #1F2937;
+  	border: none;
+  	outline: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+.slider input[type="range"]::-webkit-slider-thumb {
+   	-webkit-appearance: none !important;
+    width: 15px;
+    height:15px;
+    background: #1F2937;
+    border: 2px solid #1F2937;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slider input[type="range"]::-webkit-slider-thumb:hover {
+    background: #1F2937;
+ } 
+   
 
 @media only screen and (max-width: 481px) {
     .container {
