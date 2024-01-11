@@ -58,10 +58,14 @@ hr {
     border-radius: 6px;
 }
 .password-box-generated {
-    width: 100%;
+    color: #55F991;
+    height: 30px;
     text-align: center;
     position: relative;
-    top: 4px;
+    background: transparent;
+    border: 0;
+    resize: none;
+    top: 10px;
 }
 .password-box-functions {
     display: flex;

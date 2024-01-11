@@ -8,11 +8,27 @@ var userPassword
 let passwordGenerator = document.getElementById("password-output")
 
 function generatePassword() {
-    passwordGenerator.textContent = ""
+    userPassword = ""
 
     for (i = 1; i < 16; i++) {
         let randomCharacter1 = Math.floor ( Math.random()*characters.length)
-        passwordGenerator.textContent += characters[randomCharacter1]
+        userPassword += characters[randomCharacter1]
+		passwordGenerator.textContent = userPassword
     }
 }
 
+/** Clipboard function **/
+function copyPassword() {
+	 /* Get the text field */
+	 let copyText= document.getElementById("password-output");
+    
+	 /* Select the text field */
+	 copyText.select();
+	 
+	 /* Copy the text inside the text field */
+	 document.execCommand("copy");
+		 
+	 /* Use below command to access the 
+		value of copied text */
+	 console.log(copyText.value);
+}
