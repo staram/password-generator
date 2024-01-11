@@ -22,28 +22,13 @@ img {
 
 .container {
     background-color: #1F2937;
-    padding: 60px 40px;
+    padding: 50px;
     min-width: 300px;
     margin: 0 auto;
 }
 
-h1 {
-    font-weight: 800;
-    font-size: 40px;
-    color: #FFFFFF;
-}
-
-#title-green {
-    display: block;
-    color: #4ADF86;
-}
-
 p {
     color: #D5D4D8;
-}
-
-.space {
-    padding-bottom: 40px;
 }
 
 button {
@@ -60,28 +45,51 @@ hr {
     margin: 2rem 0;
 }
 
-.password-list {
-    list-style-type: none;
+/** new password box **/
+.password-box {
+    background-color: #273549;
     color: #55F991;
+    width: 250px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 0;
-    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 5px 10px;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+.password-box-generated {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 4px;
+}
+.password-box-functions {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.password-generated {
-    max-width: 350px;
-    padding: 10px 40px;
-    background-color: #273549;
-    border-radius: 6px;
-}
 
+#password-box-copy,
+#password-box-refresh {
+    background-color: transparent;
+    border: none;
+    background-size: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+#password-box-copy {
+    background-image: url('./icons8-copy-48.png');
+}
+#password-box-refresh {
+    background-image: url('./icons8-refresh-48.png');
+}
 
 @media only screen and (max-width: 481px) {
     .container {
-        min-width: 3cap;
+        min-width: 300px;
     }
 
     .password-list {

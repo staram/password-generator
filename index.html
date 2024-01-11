@@ -14,22 +14,33 @@
     <body>
 
         <div class="container">
-
-            <h1>Generate a <span id="title-green">random password</span></h1>
-            <p>Never use an insecure password again.</p>
-
-            <div class="space"></div>
-
-            <button class="generate-password" onclick="generatePassword()"">Generate passwords</button>
+            <!-- add Refresh and Copy functions -->
+            <div class="password-box">
+                <div class="password-box-generated" id="password-output">
+                    - - - - -
+                </div>
+                <div class="password-box-functions">
+                    <div>
+                        <button 
+                        type="submit" 
+                        id="password-box-copy"
+                        onclick="copyPassword()"></button>
+                    </div>
+                    <div>
+                        <button 
+                        type="submit" 
+                        id="password-box-refresh"
+                        onclick="generatePassword()"></button>
+                    </div>
+                </div>
+            </div>
 
             <hr>
 
-            <div></div>
-                <ul class="password-list">
-                    <li class="password-generated"><span id="password1-el">password1</span> <img src="./icons8-copy-96.png"></li>
-                    <li class="password-generated"><span id="password2-el">password2</span> <img src="./icons8-copy-96.png"></li>
-                </ul>
-            </div>
+            <p>Length</p>
+            <p>Numbers</p>
+            <p>Special characters</p>
+
 
         </div> <!-- /container -->
 
