@@ -14,6 +14,7 @@
     <body>
 
         <div class="container">
+
             <!-- add Refresh and Copy functions -->
             <div class="password-box">
                 
@@ -40,8 +41,8 @@
                     </div>
                 </div>
             </div> <!-- /password-box -->
-
-            <p class="copy-tooltip"></p>
+            
+            <p class="copy-tooltip" id="tooltip"></p>
 
 
             <h1>Password Generator</h1>
@@ -49,10 +50,10 @@
             <div class="parameters">
                 <div>Length <span id="output-range"></span></div>
                 <div class="slider">
-                    <input type="range" min="8" max="20" value="15" class="input-slider" id="length-range">
+                    <input type="range" min="8" max="20" value="15" class="input-slider" id="input-range">
                 </div>
-                <div><input type="checkbox"></input> Numbers</div>
-                <div><input type="checkbox"></input> Special characters</div>
+                <div><input type="checkbox" id="input-numbers"></input> Numbers</div>
+                <div><input type="checkbox" id="input-specialchars"></input> Special characters</div>
 
             </div> <!-- /parameters -->
 

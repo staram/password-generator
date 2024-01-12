@@ -9,7 +9,6 @@ let passwordGenerator = document.getElementById("password-output")
 
 function generatePassword() {
     userPassword = ""
-
     for (i = 1; i < 16; i++) {
         let randomCharacter1 = Math.floor ( Math.random()*characters.length)
         userPassword += characters[randomCharacter1]
@@ -27,12 +26,16 @@ function copyPassword() {
 	 
 	 /* Copy the text inside the text field */
 	 document.execCommand("copy");
+
+	 /* Tooltip */
+	 let tooltipMessage = document.getElementById("tooltip")
+	 tooltipMessage.textContent = "Copied!"
 }
 
 
 /** Slider */
 
-var slider = document.getElementById("length-range");
+var slider = document.getElementById("input-range");
 var output = document.getElementById("output-range");
 output.innerHTML = slider.value; // Display the default slider value
 
